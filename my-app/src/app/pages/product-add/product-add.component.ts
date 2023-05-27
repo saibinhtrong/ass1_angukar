@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
 import { IProduct } from 'src/app/interfaces/product';
 import { ProductService } from 'src/app/services/product.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-add',
@@ -16,7 +17,8 @@ export class ProductAddComponent {
   })
 
   constructor(private productService: ProductService,
-    private formBuilder: FormBuilder){
+    private formBuilder: FormBuilder,
+    private router: Router){
 
     }
 
@@ -27,7 +29,9 @@ export class ProductAddComponent {
           price: this.productForm.value.price || 0,
         }
         this.productService.addProduct(product).subscribe(item =>{
-          console.log(' thanh cong ', item)
+          console.log(' thanh cong ', item);
+          this.router.navigate([`/admin/products`])
+
         })
       }
     }

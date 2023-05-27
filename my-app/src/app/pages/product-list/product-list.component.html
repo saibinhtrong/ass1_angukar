@@ -1,0 +1,31 @@
+<button><a routerLink="/admin/products/add">thêm sản phẩm</a></button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th>Ảnh</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; index as i">
+            <td>{{ i + 1 }}</td>
+            <td><img [src]="product.img" /></td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+                <button
+                    class="btn btn-danger"
+                    (click)="onHandleRemove(product.id)!"
+                >
+                    Xóa
+                </button>
+                <button class='' routerLink="/admin/products/{{product.id}}/update">
+                    sửa
+                </button>
+                
+            </td>
+        </tr>
+    </tbody>

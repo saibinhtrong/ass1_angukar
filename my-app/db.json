@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "json",
+      "price": 54235
+    },
+    {
+      "id": 2,
+      "name": "json2",
+      "price": 542354
+    },
+    {
+      "name": "hfghs",
+      "price": "0456",
+      "id": 4
+    },
+    {
+      "name": "sp 2",
+      "price": "432",
+      "id": 5
+    },
+    {
+      "name": "sp 2",
+      "price": "432",
+      "id": 6
+    }
+  ]
+}

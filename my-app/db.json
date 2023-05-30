@@ -1,29 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "json",
-      "price": 54235
-    },
-    {
-      "id": 2,
-      "name": "json2",
-      "price": 542354
-    },
-    {
-      "name": "hfghs",
+      "name": "hfghs 121231321321",
       "price": "0456",
       "id": 4
     },
     {
-      "name": "sp 2 update",
-      "price": "432",
-      "id": 5
+      "name": "san pham 2",
+      "price": "0324",
+      "id": 6
     },
     {
-      "name": "san pham 3",
-      "price": "04123",
-      "id": 6
+      "name": "trwete update",
+      "price": "0543",
+      "id": 7
+    },
+    {
+      "name": "dsadasd",
+      "price": "021312",
+      "id": 8
     }
   ]
 }
